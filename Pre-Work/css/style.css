@@ -1,0 +1,161 @@
+
+body{
+    background-color: floralwhite;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    font-family: papyrus !important;
+}   
+@media (min-width:980px){
+    body{
+        background-image: url(/Users/anton/Coding/Perschoolas/Pre-Work/picture/bacground.jpg);
+    }
+
+
+.container{
+        
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+
+
+}
+
+.leftColumn{
+
+-webkit-flex: initial;
+flex: initial;
+min-width: 23.33%;
+
+}
+
+.midColumn{
+position:sticky;
+margin-left: 7.33%;
+-webkit-flex: initial;
+flex: initial;
+width: 46.33%;
+
+}
+
+.rightColumn{
+
+position:sticky;
+-webkit-flex: initial;
+flex: initial;
+
+width: 30.33%;
+}
+@media (max-width:979px){
+    body{
+        background-image: url(/Users/anton/Coding/Perschoolas/Pre-Work/picture/bacgroundVertical.jpg);
+    }
+.container{
+        
+    position: relative;
+    display: -webkit-inline-block;
+    display: inline-block;
+
+
+}
+}
+  
+    
+}
+header{
+
+    width: 100%;
+    text-align: center;    
+}
+.footer{
+    
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    margin-left: 3%;
+    
+    
+
+}
+img{
+    border-radius: 20px;
+}
+a{
+    margin: 15px;
+    color: rgb(103, 175, 103);
+}
+h1{
+    text-decoration:underline;
+    color:#4d5058    
+} 
+
+
+
+h3{
+    
+    color:rgb(103, 175, 103);
+}
+
+h4{
+    text-align: center;
+    color:#4d5058
+}
+
+p{
+    font-size:large;
+    color: #084492;
+}
+
+ul{
+    font-style: italic;
+}
+table{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.travelBy{
+    color:rgb(103, 175, 103);
+    
+}
+.yellowAccent{
+    color:#be8b0a;
+}   
+form{
+    font-family: papyrus !important;
+}
+input{
+    font-family: papyrus !important;
+}
+textarea{
+    font-family: papyrus !important;
+}   
+
+.sugForm{
+    border-radius: 5px;
+    background-color: rgb(241, 240, 235);
+}
+.sugForm:hover{
+    background-color: rgb(170, 218, 170);
+}
+input[type="button"]{
+    border-radius: 5px;
+    background-color: #be8b0a;
+}
+input[type="button"]:hover{
+   
+    background-color: rgb(103, 175, 103);
+
+
+}
+input[type="button"]:active{
+    
+    background-color: #90b9ee;
+
+}
+
+#rand{
+    margin-top: 100px;
+    font-style: italic;
+}
