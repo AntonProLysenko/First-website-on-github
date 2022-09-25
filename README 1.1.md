@@ -1,11 +1,36 @@
 # repo-practice
-Hello World!
-It's my firs expirience with github
-it is not going well so far
 
 
 
-Update1.1
+  Update1.1.1 (clear code & bug fixing)
+What included:
+-Fixed: 
+
+        deleted unnacesary code lines and added right for flexbox 
+
+        fixed issue with mobile background
+
+
+        footer changes place in mobile version
+
+
+
+-Added: 
+
+        Picture upscaling when hovered on info page
+
+
+
+
+
+
+
+
+
+
+
+
+Update1.1(safari and mobile device compatibility)
 What included:
 -Fixed: 
 
@@ -18,4 +43,18 @@ What included:
         text overlapping the profile pic on Ipad;
 
 -Added: 
-        advanced capability for all kinds of mobile devices.      
+        advanced capability for all kinds of mobile devices.   
+
+
+
+
+       
+       
+       
+       
+       
+       
+      
+
+          
+
