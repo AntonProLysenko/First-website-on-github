@@ -5,78 +5,144 @@ body{
     background-repeat: repeat-y;
     font-family: papyrus !important;
 }   
+
 @media (min-width:980px){
     body{
-        background-image: url(/Users/anton/Coding/Perschoolas/Pre-Work/picture/bacground.jpg);
+        background-image: url(/Users/anton/Desktop/Git-Hub/Per-Schoolas-Git/Pre-Work/picture/bacground.jpg);
+        background-size: 100%;
+        
+    }
+    
+
+    .gridContainer{
+        display: grid;
+        grid-template: auto auto auto / 23.33% 46.33% 30.33%;
+        grid-template-areas:
+        "header header header"
+        "mainContainer mainContainer mainContainer"
+        "footer footer footer";
+    }
+
+    .footer{
+        
+        grid-area:footer;
+        position: fixed;
+        bottom: 50px;
+        left: 0;
+        margin-left: 3%;
+    }
+    .header{
+        grid-area:header;
+        text-align: center; 
     }
 
 
-.container{
+    .mainContainer{
+       
+       grid-area:mainContainer;
+       display: flex;
+       display: -webkit-flex;
+       
+    }
+
+   .leftColumn{
+      flex-basis: 23.33%;
+
+    }
+
+   .midColumn{
+      
+    
+      flex-basis: 46.33%;
+
+    }
+
+    .rightColumn{
+
+         flex-basis: 30.33%;
+    }
+    #rightColumnContainer{
         
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-
-
+        display:flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        gap: 300px;
+    }
+    #tripPic{
+        align-self: center;
+        position:absolute;
+        z-index: 0;
+        filter: blur(1.25px);
+        
+    }
+    #tripPic:hover{
+        position:fixed;
+        top:0;
+        left:25%;
+        top:25%;
+        z-index: 3;
+        filter: blur(0px);
+        height: 600px;
+        
+    }
+    
+    
+    
+    #details{
+        position:absolute;
+        z-index: 1;
+        font-weight:bolder;
+        font-size: x-large;
+        margin-left: 7%;
+        
+    }
 }
 
-.leftColumn{
-
--webkit-flex: initial;
-flex: initial;
-min-width: 23.33%;
-
-}
-
-.midColumn{
-position:sticky;
-margin-left: 7.33%;
--webkit-flex: initial;
-flex: initial;
-width: 46.33%;
-
-}
-
-.rightColumn{
-
-position:sticky;
--webkit-flex: initial;
-flex: initial;
-
-width: 30.33%;
-}
 @media (max-width:979px){
     body{
-        background-image: url(/Users/anton/Coding/Perschoolas/Pre-Work/picture/bacgroundVertical.jpg);
+        background-image: url(/Users/anton/Desktop/Git-Hub/Per-Schoolas-Git/Pre-Work/picture/bacgroundVertical.jpg);
+        background-size: 100%;
     }
-.container{
+    .container{
+
+       display: -webkit-inline-block;
+       display: inline-block;
+
+    }
+    #rightColumnContainer{
+        display:flex;
+        flex-direction: column;
+        gap: 300px;
         
-    position: relative;
-    display: -webkit-inline-block;
-    display: inline-block;
-
-
-}
-}
-  
     
-}
-header{
+    }
+    #tripPic{
+        align-self: center;
+        position:absolute;
+        z-index: 1;
+        
+    }
+    #details{
+        position:absolute;
+        
+        
+        
+    }
+    .footer{
 
-    width: 100%;
-    text-align: center;    
+        position: fixed;
+        bottom: 50px;
+        right: 0;
+        margin-right: 3%;
+    }
+    .header{
+        
+        text-align: center; 
+    }
 }
-.footer{
-    
-    position: fixed;
-    bottom: 50px;
-    left: 0;
-    margin-left: 3%;
-    
-    
 
-}
-img{
+  img{
     border-radius: 20px;
 }
 a{
@@ -85,7 +151,7 @@ a{
 }
 h1{
     text-decoration:underline;
-    color:#4d5058    
+    color:#4d5058;   
 } 
 
 
@@ -97,7 +163,7 @@ h3{
 
 h4{
     text-align: center;
-    color:#4d5058
+    color:#4d5058;
 }
 
 p{
@@ -111,6 +177,7 @@ ul{
 table{
     text-align: center;
     width: 100%;
+    margin-left:6%;
 }
 
 
@@ -154,6 +221,11 @@ input[type="button"]:active{
     background-color: #90b9ee;
 
 }
+
+
+
+
+
 
 #rand{
     margin-top: 100px;

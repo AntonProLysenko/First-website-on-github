@@ -1,7 +1,10 @@
 # repo-practice
 
+Update1.1.2 (clear code & bug fixing)
+ Added grid layout
 
-
+ 
+ 
   Update1.1.1 (clear code & bug fixing)
 What included:
 -Fixed: 
